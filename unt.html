@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patil E-Bicycle World</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(to right, #22c55e, #0ea5e9);
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .cart {
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            font-size: 18px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        /* PAGE SYSTEM */
+        .page {
+            display: none;
+            padding: 30px;
+        }
+
+        .page:target {
+            display: block;
+        }
+
+        /* BRAND CARDS */
+        .brand-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .brand-card {
+            background: #1f2937;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .brand-card:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .brand-card a {
+            text-decoration: none;
+            color: #22c55e;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* DETAILS */
+        .details {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            background: #22c55e;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+
+    <script>
+        let cartCount = 0;
+        function addToCart(name) {
+            cartCount++;
+            document.getElementById("cartCount").innerText = cartCount;
+            alert(name + " added to cart!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        Patil E-Bicycle World
+        <span class="cart"> <span id="cartCount">0</span></span>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page">
+        <h2>Our Brands</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <a href="#firefox">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSYcOKEBiI30t8SQALmiPm98rhuWosLM04YA&s">
+                    <p>Firefox Cycles</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero">
+                    <img
+                        src="https://cdn.bikedekho.com/processedimages/lectro-electric/y3/640X309/y368406ee5693a3.jpg?tr=w-320">
+                    <p>Hero Electric</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#lectro">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HHhmQ99qSaV_x5X7wCQTa_9dhRiaDxpiGA&s">
+                    <p>lectro</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#emotorad">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEH4QhNysRrMCXIT2NSFECzgiENKBRvwiZkw&s">
+                    <p>emotorad cycle</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- FIREFOX SUB BRANDS -->
+    <div id="firefox" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox Sub Brands</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <a href="#firefox1">
+                    <img
+                        src="https://5.imimg.com/data5/SELLER/Default/2024/9/454022211/VD/UL/PH/80979251/whatsapp-image-2024-07-24-at-6-23-47-pm-copy.jpeg">
+                    <p>Firefox Urban Eco</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#firefox2">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+                    <p>Firefox Adventron</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#firefox3">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+                    <p>Firefox roadster</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#firefox4">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+                    <p>Firefox gtech</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#firefox5">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+                    <p>Firefox cyan</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#firefox6">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+                    <p>Firefox butane</p>
+                </a>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- FIREFOX 1 DETAILS -->
+    <div id="firefox1" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox Urban Eco - Full Details</h2>
+        <img
+            src="https://5.imimg.com/data5/SELLER/Default/2024/9/454022211/VD/UL/PH/80979251/whatsapp-image-2024-07-24-at-6-23-47-pm-copy.jpeg">
+        <div class="details">
+            Battery: 36V 10Ah Lithium-ion<br><br>
+            Range: 45 KM per charge<br><br>
+            Motor: 250W BLDC<br><br>
+            Charging Time: 4 Hours<br><br>
+            Price: 28,000<br><br>
+            Excellent for city commuting.<br>
+
+        </div>
+        <h2>EMotorad T-REX AIR - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>T-REX AIR</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#6,328 in Amazon Launchpad<br>
+                    #14 in Electric Bicycles<br>
+                    #46 in Sports & Outdoors (Amazon Launchpad)</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>B0CQC5WMLN</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    169/2 Sangawade Road,<br>
+                    Pune - 411033, Maharashtra<br>
+                    +91 8686050590<br>
+                    ‰ contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad T-REX AIR')">Add to Cart</button>
+    </div>
+
+    <!-- FIREFOX 2 DETAILS -->
+    <div id="firefox2" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox Adventron - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+        <div class="details">
+            Battery: 48V 12Ah Lithium<br><br>
+            Range: 60 KM per charge<br><br>
+            Motor: 250W Hub Motor<br><br>
+            Charging Time: 5 Hours<br><br>
+            Price: 35,000<br><br>
+            Perfect for adventure rides.<br>
+        </div>
+
+        <h2>Firefox Adventron - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Firefox</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Adventron</td>
+            </tr>
+
+            <tr>
+                <td><b>Battery</b></td>
+                <td>48V 12Ah Lithium</td>
+            </tr>
+
+            <tr>
+                <td><b>Range</b></td>
+                <td>60 KM per charge</td>
+            </tr>
+
+            <tr>
+                <td><b>Motor</b></td>
+                <td>250W Hub Motor</td>
+            </tr>
+
+            <tr>
+                <td><b>Charging Time</b></td>
+                <td>5 Hours</td>
+            </tr>
+
+            <tr>
+                <td><b>Frame Type</b></td>
+                <td>High Strength Alloy Frame</td>
+            </tr>
+
+            <tr>
+                <td><b>Brakes</b></td>
+                <td>Dual Disc Brakes</td>
+            </tr>
+
+            <tr>
+                <td><b>Suspension</b></td>
+                <td>Front Suspension Fork</td>
+            </tr>
+
+            <tr>
+                <td><b>Price</b></td>
+                <td>₹35,000</td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Firefox Adventron')">Add to Cart</button>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- FIREFOX 3 DETAILS -->
+    <div id="firefox3" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox roadster - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+        <div class="details">
+            Battery: 48V 12Ah Lithium<br><br>
+            Range: 60 KM per charge<br><br>
+            Motor: 250W Hub Motor<br><br>
+            Charging Time: 5 Hours<br><br>
+            Price: 35,000<br><br>
+            Perfect for adventure rides.<br>
+        </div>
+
+        < h2>Firefox Roadster - Full Specifications</h2>
+
+            <table class="spec-table">
+
+                <tr>
+                    <th colspan="2">Product Information</th>
+                </tr>
+
+                <tr>
+                    <td><b>Brand Name</b></td>
+                    <td>Firefox</td>
+                </tr>
+
+                <tr>
+                    <td><b>Model Name</b></td>
+                    <td>Roadster</td>
+                </tr>
+
+                <tr>
+                    <td><b>Battery</b></td>
+                    <td>48V 10Ah Lithium-ion</td>
+                </tr>
+
+                <tr>
+                    <td><b>Range</b></td>
+                    <td>50 KM per charge</td>
+                </tr>
+
+                <tr>
+                    <td><b>Motor</b></td>
+                    <td>250W Rear Hub Motor</td>
+                </tr>
+
+                <tr>
+                    <td><b>Charging Time</b></td>
+                    <td>4–5 Hours</td>
+                </tr>
+
+                <tr>
+                    <td><b>Frame Material</b></td>
+                    <td>Alloy Lightweight Frame</td>
+                </tr>
+
+                <tr>
+                    <td><b>Brakes</b></td>
+                    <td>Front & Rear Disc Brakes</td>
+                </tr>
+
+                <tr>
+                    <td><b>Display</b></td>
+                    <td>LED Smart Display</td>
+                </tr>
+
+                <tr>
+                    <td><b>Price</b></td>
+                    <td>₹32,000</td>
+                </tr>
+
+            </table>
+
+            <br>
+            <button onclick="addToCart('Firefox Roadster')">Add to Cart</button>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- FIREFOX 4 DETAILS -->
+    <div id="firefox4" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox gtech - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+        <div class="details">
+            Battery: 48V 12Ah Lithium<br><br>
+            Range: 60 KM per charge<br><br>
+            Motor: 250W Hub Motor<br><br>
+            Charging Time: 5 Hours<br><br>
+            Price: 35,000<br><br>
+            Perfect for adventure rides.<br>
+
+        </div>
+        <h2>Firefox Getch - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Firefox Bikes - Ride Beyond Limits</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Getch</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Firefox Bikes Pvt. Ltd.</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#8,450 in Electric Bicycles<br>
+                    #120 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Firefox Bikes Pvt. Ltd.<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@firefoxbikes.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Firefox Getch')">Add to Cart</button>
+    </div>
+
+    <!-- FIREFOX 5 DETAILS -->
+    <div id="firefox5" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox cyan - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+        <div class="details">
+            Battery: 48V 12Ah Lithium<br><br>
+            Range: 60 KM per charge<br><br>
+            Motor: 250W Hub Motor<br><br>
+            Charging Time: 5 Hours<br><br>
+            Price: 35,000<br><br>
+            Perfect for adventure rides.<br>
+
+        </div>
+        <h2>Firefox Cyan - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Firefox Bikes - Ride Beyond Limits</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Cyan</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Firefox Bikes Pvt. Ltd.</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#9,120 in Electric Bicycles<br>
+                    #135 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Firefox Bikes Pvt. Ltd.<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@firefoxbikes.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Firefox Cyan')">Add to Cart</button>
+    </div>
+
+    <!-- FIREFOX 6 DETAILS -->
+    <div id="firefox6" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Firefox butane - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s">
+        <div class="details">
+            Battery: 48V 12Ah Lithium<br><br>
+            Range: 60 KM per charge<br><br>
+            Motor: 250W Hub Motor<br><br>
+            Charging Time: 5 Hours<br><br>
+            Price: 35,000<br><br>
+            Perfect for adventure rides.<br>
+
+        </div>
+        <h2>Firefox Butane - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Firefox Bikes - Ride Beyond Limits</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Butane</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Firefox Bikes Pvt. Ltd.</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#10,250 in Electric Bicycles<br>
+                    #150 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Firefox Bikes Pvt. Ltd.<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@firefoxbikes.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Firefox Butane')">Add to Cart</button>
+    </div>
+
+    <!-- HERO SUB BRANDS -->
+    <div id="hero" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Electric Models</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <a href="#hero1">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HHhmQ99qSaV_x5X7wCQTa_9dhRiaDxpiGA&s">
+                    <p>Hero Lectro C3</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero2">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p>Hero Lectro F6i</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero3">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p>Hero Lectro F7i</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero4">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p>Hero Lectro F90</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero5">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p>Hero Lectro c65</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#hero6">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p>Hero Lectro conite</p>
+                </a>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- HERO  DETAILS -->
+    <div id="hero1" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro C3 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HHhmQ99qSaV_x5X7wCQTa_9dhRiaDxpiGA&s">
+        <div class="details">
+            Battery: 36V 5.8Ah<br><br>
+            Range: 30 KM<br><br>
+            Motor: 250W<br><br>
+            Price: 26,000<br>
+
+        </div>
+        <h2>Hero Lectro C3 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>C3</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#5,980 in Electric Bicycles<br>
+                    #90 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro C3')">Add to Cart</button>
+    </div>
+
+    <div id="hero2" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro F6i - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Hero Lectro F6i - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>F6i</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#4,750 in Electric Bicycles<br>
+                    #70 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro F6i')">Add to Cart</button>
+    </div>
+
+    <div id="hero3" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro F7i - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Hero Lectro F7i - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>F7i</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#3,980 in Electric Bicycles<br>
+                    #60 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro F7i')">Add to Cart</button>
+    </div>
+
+    <div id="hero4" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro F90 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Hero Lectro F90 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>F90</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#2,950 in Electric Bicycles<br>
+                    #45 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro F90')">Add to Cart</button>
+    </div>
+
+    <div id="hero5" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro c65 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Hero Lectro C65 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>C65</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#3,450 in Electric Bicycles<br>
+                    #55 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro C65')">Add to Cart</button>
+    </div>
+
+    <div id="hero6" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>Hero Lectro conite - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Hero Lectro Conite - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Hero Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Conite</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Hero Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#4,120 in Electric Bicycles<br>
+                    #68 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Hero Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@herolectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Hero Lectro Conite')">Add to Cart</button>
+    </div>
+
+    <!-- lectro SUB BRANDS -->
+    <div id="lectro" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>lectro Electric Models</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <a href="#lectro1">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HHhmQ99qSaV_x5X7wCQTa_9dhRiaDxpiGA&s">
+                    <p> Lectro C3</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#lectro2">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+                    <p> Lectro F6i</p>
+                </a>
+            </div>
+
+
+
+            <div class="brand-card">
+                <a href="#lectro5">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nG31Ov0ucQaDnTx2AvzGh0FshbUBOQvWXw&s">
+                    <p>Lectro c65</p>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- lectro  DETAILS -->
+    <div id="lectro1" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> Lectro C3 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HHhmQ99qSaV_x5X7wCQTa_9dhRiaDxpiGA&s">
+        <div class="details">
+            Battery: 36V 5.8Ah<br><br>
+            Range: 30 KM<br><br>
+            Motor: 250W<br><br>
+            Price: 26,000<br>
+
+        </div>
+        <h2>Lectro C3 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>C3</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#6,100 in Electric Bicycles<br>
+                    #95 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@lectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Lectro C3')">Add to Cart</button>
+    </div>
+
+    <div id="lectro2" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> Lectro F6i - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Lectro F6i - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>F6i</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#4,300 in Electric Bicycles<br>
+                    #72 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@lectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Lectro F6i')">Add to Cart</button>
+    </div>
+
+
+    <div id="lectro5" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> Lectro c65 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nG31Ov0ucQaDnTx2AvzGh0FshbUBOQvWXw&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>Lectro C65 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>Lectro - Powered by Hero Cycles</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>C65</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>Lectro (Hero Cycles Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#3,700 in Electric Bicycles<br>
+                    #58 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    Lectro (Hero Cycles Ltd.)<br>
+                    India<br>
+                    +91 XXXXX XXXXX<br>
+                    support@lectro.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('Lectro C65')">Add to Cart</button>
+    </div>
+
+
+
+    <!-- emotorad SUB BRANDS -->
+    <div id="emotorad" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2>emotorad Electric Models</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <a href="#emotorad1">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM3xJcDvau2TBVlZRMMSuEcgnpUwxNWdXMA&s">
+                    <p>emotorad ytech</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#emotorad2">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g2QT03fyynyV2_-RZCuOCYKlFcVOOcfVfw&s">
+                    <p> emotorad joy</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#emotorad3">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRHOOBAnZaiqIO_76k7VnnlF9S3JIBGttZw&s">
+                    <p> emotorad yu7i</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#emotorad4">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnk8pOQh5ZpjJ4EsBIJsNF6DJ1SL1L384ew&s">
+                    <p> emotorad y980</p>
+                </a>
+            </div>
+
+            <div class="brand-card">
+                <a href="#emotorad5">
+                    <img
+                        src="https://ik.imagekit.io/08ltcz2tbnu/electric-cycles/WhatsApp%20Image%202024-12-23%20at%2019.36.51_6b0cf6b9.avif?updatedAt=1753553583723">
+                    <p>emotorad yblock</p>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- emotorad  DETAILS -->
+    <div id="emotorad1" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> emotorad ytech - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFM3xJcDvau2TBVlZRMMSuEcgnpUwxNWdXMA&s">
+        <div class="details">
+            Battery: 36V 5.8Ah<br><br>
+            Range: 30 KM<br><br>
+            Motor: 250W<br><br>
+            Price: 26,000<br>
+
+        </div>
+        <h2>EMotorad YTECh - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>YTECh</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad (INKODOP Technologies Pvt. Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#7,200 in Electric Bicycles<br>
+                    #110 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    Pune, Maharashtra, India<br>
+                    +91 8686050590<br>
+                    contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad YTECh')">Add to Cart</button>
+    </div>
+
+    <div id="emotorad2" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> emotorad joy - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g2QT03fyynyV2_-RZCuOCYKlFcVOOcfVfw&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>EMotorad Joy - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Joy</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad (INKODOP Technologies Pvt. Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#8,050 in Electric Bicycles<br>
+                    #125 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    Pune, Maharashtra, India<br>
+                    +91 8686050590<br>
+                    contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad Joy')">Add to Cart</button>
+    </div>
+
+    <div id="emotorad3" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> emotorad yu7i - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIRHOOBAnZaiqIO_76k7VnnlF9S3JIBGttZw&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>EMotorad Yu7i - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Yu7i</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad (INKODOP Technologies Pvt. Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#6,950 in Electric Bicycles<br>
+                    #105 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    Pune, Maharashtra, India<br>
+                    +91 8686050590<br>
+                    contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad Yu7i')">Add to Cart</button>
+    </div>
+
+    <div id="emotorad4" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> emotorad y980 - Full Details</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnk8pOQh5ZpjJ4EsBIJsNF6DJ1SL1L384ew&s">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>EMotorad Y980 - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>Y980</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad (INKODOP Technologies Pvt. Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#5,820 in Electric Bicycles<br>
+                    #88 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    Pune, Maharashtra, India<br>
+                    +91 8686050590<br>
+                    contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad Y980')">Add to Cart</button>
+    </div>
+
+    <div id="emotorad5" class="page">
+        <a href="#home" class="btn back"> Back</a>
+        <h2> emotorad yblock - Full Details</h2>
+        <img
+            src="https://ik.imagekit.io/08ltcz2tbnu/electric-cycles/WhatsApp%20Image%202024-12-23%20at%2019.36.51_6b0cf6b9.avif?updatedAt=1753553583723">
+        <div class="details">
+            Battery: 36V 6.4Ah<br><br>
+            Range: 35 KM<br><br>
+            Motor: 250W BLDC<br><br>
+            Price: 30,000<br>
+
+        </div>
+        <h2>EMotorad YBlock - Full Specifications</h2>
+
+        <table class="spec-table">
+
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+
+            <tr>
+                <td><b>Age Range Description</b></td>
+                <td>Youth</td>
+            </tr>
+
+            <tr>
+                <td><b>Brand Name</b></td>
+                <td>E MOTORAD - RIDE THE ELECTRIC REVOLUTION</td>
+            </tr>
+
+            <tr>
+                <td><b>Model Name</b></td>
+                <td>YBlock</td>
+            </tr>
+
+            <tr>
+                <td><b>Item Type Name</b></td>
+                <td>Electric Cycle</td>
+            </tr>
+
+            <tr>
+                <td><b>Country Of Origin</b></td>
+                <td>India</td>
+            </tr>
+
+            <tr>
+                <td><b>Manufacturer</b></td>
+                <td>EMotorad (INKODOP Technologies Pvt. Ltd.)</td>
+            </tr>
+
+            <tr>
+                <td><b>What's In The Box</b></td>
+                <td>Battery, Charger, Electric Cycle, Tool Kit</td>
+            </tr>
+
+            <tr>
+                <td><b>Unit Count</b></td>
+                <td>1.00 Count</td>
+            </tr>
+
+            <tr>
+                <td><b>Warranty Description</b></td>
+                <td>2 Year Manufacturer Warranty</td>
+            </tr>
+
+            <tr>
+                <td><b>Best Sellers Rank</b></td>
+                <td>#6,300 in Electric Bicycles<br>
+                    #92 in Sports & Outdoors</td>
+            </tr>
+
+            <tr>
+                <td><b>ASIN</b></td>
+                <td>—</td>
+            </tr>
+
+            <tr>
+                <td><b>Packer Contact Information</b></td>
+                <td>
+                    INKODOP TECHNOLOGIES PVT LTD<br>
+                    At post Jambe, Taluka Mulshi,<br>
+                    Pune, Maharashtra, India<br>
+                    +91 8686050590<br>
+                    contactus@emotorad.com
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button onclick="addToCart('EMotorad YBlock')">Add to Cart</button>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <h2>About Us</h2>
+        <p>Electric bicycles are smart mobility solutions for modern cities.
+            They reduce fuel cost and pollution.
+            Battery powered assist makes cycling effortless.
+            Perfect for students and office commuters.
+            Eco-friendly and low maintenance transport.
+            Ideal for daily travel and fitness.
+            Electric cycles support long distance rides.
+            Smart technology improves riding comfort.
+            Future transportation is electric mobility.
+            Affordable and sustainable vehicle choice.
+            Helps environment by reducing carbon emissions.
+            Best innovation in personal transportation.</p>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <h2>Contact Us</h2>
+        Patil Harshal<br>
+         1234567890<br>
+         harshal11@gmail.com <br>
+        Patil Pratik<br>
+        1234567890<br>
+        pratik22@gmail.com <br>
+        Patil Krishna<br>
+        1234567890<br>
+        krishna33@gmail.com <br>
+        Patil Nayan<br>
+        1234567890<br>
+        nayan44@gmail.com <br>
+        Wagh Durgesh<br>
+        1234567890<br>
+        durgesh55@gmail.com<br>
+    </div>
+
+</body>
+
+</html>

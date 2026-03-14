@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patil Adventures | Premium Cycle Centre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">PATIL ADVENTURES</a>
+        <div class="nav-links">
+            <a href="index.html" style="color:var(--primary)">Home</a>
+            <a href="about.html">About</a>
+            <a href="firefox.html">Firefox</a>
+            <a href="hero.html">Hero</a>
+            <a href="lectro.html">Lectro</a>
+            <a href="emotorad.html">E-Motorad</a>
+            <a href="contact.html">Contact</a>
+            <button class="cart-btn" onclick="window.location.href='index.html'">
+                Buy (<span id="cartNum">0</span>)
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero fade-in">
+        <h1>FIND YOUR<br>PERFECT RIDE</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search brands (e.g., Firefox, Hero, Lectro)...">
+            <button onclick="searchBrand()">SEARCH</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <a href="firefox.html" class="brand-card fade-in">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/454022211/VD/UL/PH/80979251/whatsapp-image-2024-07-24-at-6-23-47-pm-copy.jpeg"
+                    alt="Firefox Cycles">
+                <h3>Firefox Cycles</h3>
+                <p>Global Engineering, Premium Performance</p>
+            </a>
+            <a href="lectro.html" class="brand-card fade-in">
+                <img src="https://th.bing.com/th/id/OIP.A9J8sUZ_HwSc5R1Z4-K3egHaFG?w=249&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="Hero Lectro">
+                <h3>Hero Lectro</h3>
+                <p>Plug into the future of commuting</p>
+            </a>
+            <a href="hero.html" class="brand-card fade-in">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2025/1/482596065/HH/QD/TL/28449424/hero-lectro-h7-plus-electric-cycle-1000x1000.jpg"
+                    alt="Hero Electric">
+                <h3>Hero Electric</h3>
+                <p>The most trusted name in Indian cycling</p>
+            </a>
+            <a href="emotorad.html" class="brand-card fade-in">
+                <img src="https://th.bing.com/th/id/OIP.5OWEp9grFFCsmfISnmabIQHaEK?w=294&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="E-Motorad">
+                <h3>E-Motorad</h3>
+                <p>High Performance Electric Mountain Bikes</p>
+            </a>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

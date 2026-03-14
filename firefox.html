@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox Cycles | Patil Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">PATIL ADVENTURES</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="firefox.html" style="color:var(--primary)">Firefox</a>
+            <a href="hero.html">Hero</a>
+            <a href="lectro.html">Lectro</a>
+            <a href="emotorad.html">E-Motorad</a>
+            <a href="contact.html">Contact</a>
+            <button class="cart-btn">
+                Buy (<span id="cartNum">0</span>)
+            </button>
+        </div>
+    </nav>
+
+    <div class="container fade-in" style="margin-top: 50px;">
+        <div style="margin-bottom: 20px;">
+            <a href="index.html" class="btn btn-outline">← Back to Home</a>
+        </div>
+
+        <h1 style="text-align: center; font-size: 50px; margin-bottom: 60px; color: var(--primary);">FIREFOX ELECTRIC
+        </h1>
+
+        <!-- Firefox Urban Eco -->
+        <div class="product-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/454022211/VD/UL/PH/80979251/whatsapp-image-2024-07-24-at-6-23-47-pm-copy.jpeg"
+                class="product-img" alt="Urban Eco" onclick="cart.addItemAndShow('Firefox Urban Eco', '₹28,000')">
+            <div class="product-info">
+                <h2>Firefox Urban Eco</h2>
+                <div class="price-container">
+                    <span class="price">₹28,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Urban Eco', '₹28,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firefox Adventron -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s"
+                class="product-img" alt="Adventron" onclick="cart.addItemAndShow('Firefox Adventron', '₹35,000')">
+            <div class="product-info">
+                <h2>Firefox Adventron</h2>
+                <div class="price-container">
+                    <span class="price">₹35,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Adventron', '₹35,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firefox Roadster -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s"
+                class="product-img" alt="Roadster" onclick="cart.addItemAndShow('Firefox Roadster', '₹32,000')">
+            <div class="product-info">
+                <h2>Firefox Roadster</h2>
+                <div class="price-container">
+                    <span class="price">₹32,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Roadster', '₹32,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firefox Gtech -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s"
+                class="product-img" alt="Gtech" onclick="cart.addItemAndShow('Firefox Gtech', '₹35,000')">
+            <div class="product-info">
+                <h2>Firefox Gtech</h2>
+                <div class="price-container">
+                    <span class="price">₹35,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Gtech', '₹35,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firefox Cyan -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s"
+                class="product-img" alt="Cyan" onclick="cart.addItemAndShow('Firefox Cyan', '₹35,000')">
+            <div class="product-info">
+                <h2>Firefox Cyan</h2>
+                <div class="price-container">
+                    <span class="price">₹35,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Cyan', '₹35,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Firefox Butane -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTmLLZvx3fMcuVb0RIvORwgcSPcphMfb0-VA&s"
+                class="product-img" alt="Butane" onclick="cart.addItemAndShow('Firefox Butane', '₹35,000')">
+            <div class="product-info">
+                <h2>Firefox Butane</h2>
+                <div class="price-container">
+                    <span class="price">₹35,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Firefox Butane', '₹35,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

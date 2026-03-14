@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Lectro | Patil Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">PATIL ADVENTURES</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="firefox.html">Firefox</a>
+            <a href="hero.html">Hero</a>
+            <a href="lectro.html" style="color:var(--primary)">Lectro</a>
+            <a href="emotorad.html">E-Motorad</a>
+            <a href="contact.html">Contact</a>
+            <button class="cart-btn">
+                Buy (<span id="cartNum">0</span>)
+            </button>
+        </div>
+    </nav>
+
+    <div class="container fade-in" style="margin-top: 50px;">
+        <div style="margin-bottom: 20px;">
+            <a href="index.html" class="btn btn-outline">← Back to Home</a>
+        </div>
+
+        <h1 style="text-align: center; font-size: 50px; margin-bottom: 60px; color: var(--primary);">HERO LECTRO</h1>
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.A9J8sUZ_HwSc5R1Z4-K3egHaFG?w=249&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                class="product-img" alt="Hero Lectro C1" onclick="cart.addItemAndShow('Hero Lectro C1', '₹26,999')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+C1'">
+            <div class="product-info">
+                <h2>Hero Lectro C1</h2>
+                <div class="price-container">
+                    <span class="price">₹26,999</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C1', '₹26,999')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="data:image/webp;base64,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"
+                class="product-img" alt="Hero Lectro F2i" onclick="cart.addItemAndShow('Hero Lectro F2i', '₹39,500')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+F2i'">
+            <div class="product-info">
+                <h2>Hero Lectro F2i</h2>
+                <div class="price-container">
+                    <span class="price">₹39,500</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro F2i', '₹39,500')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.LPtu4u64lrtXxskBeFZrnAHaE8?w=259&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                class="product-img" alt="Hero Lectro F6i" onclick="cart.addItemAndShow('Hero Lectro F6i', '₹48,000')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+F6i'">
+            <div class="product-info">
+                <h2>Hero Lectro F6i</h2>
+                <div class="price-container">
+                    <span class="price">₹48,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro F6i', '₹48,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Product 4: Hero Lectro C65 (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nG31Ov0ucQaDnTx2AvzGh0FshbUBOQvWXw&s"
+                class="product-img" alt="Hero Lectro C65" onclick="cart.addItemAndShow('Hero Lectro C65', '₹30,000')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+C65'">
+            <div class="product-info">
+                <h2>Hero Lectro C65</h2>
+                <div class="price-container">
+                    <span class="price">₹30,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C65', '₹30,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

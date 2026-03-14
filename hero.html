@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Electric | Patil Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .network-section {
+            background: var(--bg-card);
+            padding: 80px 40px;
+            border-radius: 40px;
+            margin: 80px 0;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .network-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .network-item i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .network-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .network-item p {
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">PATIL ADVENTURES</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="firefox.html">Firefox</a>
+            <a href="hero.html" style="color:var(--primary)">Hero</a>
+            <a href="lectro.html">Lectro</a>
+            <a href="emotorad.html">EMotorad</a>
+            <a href="contact.html">Contact</a>
+            <button class="cart-btn">
+                Buy (<span id="cartNum">0</span>)
+            </button>
+        </div>
+    </nav>
+
+    <div class="container fade-in" style="margin-top: 50px;">
+        <div style="margin-bottom: 20px;">
+            <a href="index.html" class="btn btn-outline">← Back to Home</a>
+        </div>
+
+        <h1 style="text-align: center; font-size: 50px; margin-bottom: 60px; color: var(--primary);">HERO ELECTRIC</h1>
+
+        <!-- Product 1: Hero Lectro C3 -->
+        <div class="product-card">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2025/1/482596065/HH/QD/TL/28449424/hero-lectro-h7-plus-electric-cycle-1000x1000.jpg"
+                class="product-img" alt="Hero Lectro C3" onclick="cart.addItemAndShow('Hero Lectro C3', '₹28,000')">
+            <div class="product-info">
+                <h2>Hero Lectro C3</h2>
+                <div class="price-container">
+                    <span class="price">₹28,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C3', '₹28,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4: Hero Lectro F6i (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s"
+                class="product-img" alt="Hero Lectro F6i" onclick="cart.addItemAndShow('Hero Lectro F6i', '₹48,000')">
+            <div class="product-info">
+                <h2>Hero Lectro F6i</h2>
+                <div class="price-container">
+                    <span class="price">₹48,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro F6i', '₹48,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5: Hero Lectro F7i (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s"
+                class="product-img" alt="Hero Lectro F7i" onclick="cart.addItemAndShow('Hero Lectro F7i', '₹30,000')">
+            <div class="product-info">
+                <h2>Hero Lectro F7i</h2>
+                <div class="price-container">
+                    <span class="price">₹30,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro F7i', '₹30,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6: Hero Lectro F90 (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s"
+                class="product-img" alt="Hero Lectro F90" onclick="cart.addItemAndShow('Hero Lectro F90', '₹30,000')">
+            <div class="product-info">
+                <h2>Hero Lectro F90</h2>
+                <div class="price-container">
+                    <span class="price">₹30,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro F90', '₹30,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7: Hero Lectro C65 (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s"
+                class="product-img" alt="Hero Lectro C65" onclick="cart.addItemAndShow('Hero Lectro C65', '₹30,000')">
+            <div class="product-info">
+                <h2>Hero Lectro C65</h2>
+                <div class="price-container">
+                    <span class="price">₹30,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C65', '₹30,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8: Hero Lectro Conite (New) -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbcGOiu27yCsGLytQ9RUyVlJ5AAG_LmruLA&s"
+                class="product-img" alt="Hero Lectro Conite"
+                onclick="cart.addItemAndShow('Hero Lectro Conite', '₹30,000')">
+            <div class="product-info">
+                <h2>Hero Lectro Conite</h2>
+                <div class="price-container">
+                    <span class="price">₹30,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro Conite', '₹30,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Hh2c5ZIwlIgh6Z0FGcSeKwHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3"
+                class="product-img" alt="Hero Lectro C5" onclick="cart.addItemAndShow('Hero Lectro C5', '₹31,500')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+C5'">
+            <div class="product-info">
+                <h2>Hero Lectro C5</h2>
+                <div class="price-container">
+                    <span class="price">₹31,500</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C5', '₹31,500')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.lMPkfq_Riqf_U_axaMkdxgHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3"
+                class="product-img" alt="Hero Lectro C8" onclick="cart.addItemAndShow('Hero Lectro C8', '₹38,000')"
+                onerror="this.src='https://placehold.co/600x400/252545/e94560?text=Hero+Lectro+C8'">
+            <div class="product-info">
+                <h2>Hero Lectro C8</h2>
+                <div class="price-container">
+                    <span class="price">₹38,000</span>
+                    <button class="btn btn-primary" onclick="cart.addItemAndShow('Hero Lectro C8', '₹38,000')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network Section -->
+        <section class="network-section">
+            <h2 style="font-size: 36px; color: var(--primary);">OUR EXPERIENCE NETWORK</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 20px auto;">Join the largest community of
+                electric commuters in India. With Hero Electric, you're never alone on the road.</p>
+
+            <div class="network-grid">
+                <div class="network-item">
+                    <i class="fas fa-store"></i>
+                    <h4>600+ Dealers</h4>
+                    <p>Wide service coverage across India</p>
+                </div>
+                <div class="network-item">
+                    <i class="fas fa-charging-station"></i>
+                    <h4>Charging Hubs</h4>
+                    <p>Easy access to power anywhere</p>
+                </div>
+                <div class="network-item">
+                    <i class="fas fa-users"></i>
+                    <h4>2 Million+ Users</h4>
+                    <p>Trusted by a massive community</p>
+                </div>
+                <div class="network-item">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Round the clock assistance</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <a href="contact.html" class="btn btn-primary">JOIN THE NETWORK</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
